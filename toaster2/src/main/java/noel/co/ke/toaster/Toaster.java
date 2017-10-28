@@ -19,7 +19,7 @@ public class Toaster  extends Toast{
     public static int ERROR=3;
     public static int INFO=4;
     public static int DEFAULT=5;
-    public static int CONFUSING=6;
+    public static int STOCK=6;
 
 
     public Toaster(Context context) {
@@ -32,9 +32,22 @@ public class Toaster  extends Toast{
 
         View layout = LayoutInflater.from(context).inflate(R.layout.toaster_layout, null, false);
         toast.setView(layout);
-        toast.setGravity(Gravity.TOP, 0, 0);
+        toast.setGravity(Gravity.FILL_HORIZONTAL|Gravity.TOP, 0, 0);
         toast.setMargin(0, 0);
         Log.i("Margin", String.valueOf("Horizontal" + toast.getVerticalMargin()));
+
+        //Select View Type
+        if(type == SUCCESS){
+//            Display success toast
+        }else if(type == WARNING){
+//            Display warning toast
+        }else if(type == ERROR){
+//            Display Error toast
+        }else if(type == INFO){
+//            Display Info toast
+        }else if (type == STOCK){
+//            Display Stock toast
+        }
 
 
 //        Message
