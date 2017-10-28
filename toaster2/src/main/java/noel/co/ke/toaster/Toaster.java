@@ -5,6 +5,8 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +22,9 @@ public class Toaster  extends Toast{
     public static int INFO=4;
     public static int DEFAULT=5;
     public static int STOCK=6;
+    public static int CUSTOM=7;
+
+
 
 
     public Toaster(Context context) {
@@ -32,27 +37,81 @@ public class Toaster  extends Toast{
 
         View layout = LayoutInflater.from(context).inflate(R.layout.toaster_layout, null, false);
         toast.setView(layout);
+
+
+        TextView txtMsg = layout.findViewById(R.id.txt_message);
+        ImageView toastImage = layout.findViewById(R.id.toast_icon);
+        RelativeLayout toastLayout = layout.findViewById(R.id.toast_layout);
+
         toast.setGravity(Gravity.FILL_HORIZONTAL|Gravity.TOP, 0, 0);
         toast.setMargin(0, 0);
         Log.i("Margin", String.valueOf("Horizontal" + toast.getVerticalMargin()));
 
         //Select View Type
         if(type == SUCCESS){
-//            Display success toast
+            toastImage.setImageResource(R.drawable.ic_check_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.success));
         }else if(type == WARNING){
-//            Display warning toast
+            toastImage.setImageResource(R.drawable.ic_pan_tool_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.warning));
         }else if(type == ERROR){
-//            Display Error toast
+            toastImage.setImageResource(R.drawable.ic_clear_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.error));
         }else if(type == INFO){
-//            Display Info toast
+            toastImage.setImageResource(R.drawable.ic_info_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.info));
         }else if (type == STOCK){
-//            Display Stock toast
+            toastImage.setImageResource(R.drawable.ic_info_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.stock));
         }
 
-
-//        Message
-        TextView txtMsg = layout.findViewById(R.id.txt_message);
         txtMsg.setText(message);
+
+
+        return toast;
+    }
+
+
+    public static Toast makeText(Context context,String message,int duration,int type, int image, int customColor) {
+        Toast toast = new Toast(context);
+        toast.setDuration(duration);
+
+        View layout = LayoutInflater.from(context).inflate(R.layout.toaster_layout, null, false);
+        toast.setView(layout);
+
+
+        TextView txtMsg = layout.findViewById(R.id.txt_message);
+        ImageView toastImage = layout.findViewById(R.id.toast_icon);
+        RelativeLayout toastLayout = layout.findViewById(R.id.toast_layout);
+
+        toast.setGravity(Gravity.FILL_HORIZONTAL|Gravity.TOP, 0, 0);
+        toast.setMargin(0, 0);
+        Log.i("Margin", String.valueOf("Horizontal" + toast.getVerticalMargin()));
+
+        //Select View Type
+        if(type == SUCCESS){
+            toastImage.setImageResource(R.drawable.ic_check_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.success));
+        }else if(type == WARNING){
+            toastImage.setImageResource(R.drawable.ic_pan_tool_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.warning));
+        }else if(type == ERROR){
+            toastImage.setImageResource(R.drawable.ic_clear_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.error));
+        }else if(type == INFO){
+            toastImage.setImageResource(R.drawable.ic_info_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.info));
+        }else if (type == STOCK){
+            toastImage.setImageResource(R.drawable.ic_info_white_24px);
+            toastLayout.setBackgroundColor(context.getResources().getColor(R.color.stock));
+        }else if(type == CUSTOM){
+            toastImage.setImageResource(image);
+            toastLayout.setBackgroundColor(context.getResources().getColor(customColor));
+        }
+
+        txtMsg.setText(message);
+
+
         return toast;
     }
 }

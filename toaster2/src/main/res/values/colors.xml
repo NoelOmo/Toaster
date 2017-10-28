@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stock">#1b1b1b</color>
+    <color name="warning">#fdaf17</color>
+    <color name="success">#62a465</color>
+    <color name="error">#d92727</color>
+    <color name="info">#5060ba</color>
+    <color name="default_color">#000</color>
+</resources>
