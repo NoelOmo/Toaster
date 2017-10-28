@@ -30,21 +30,21 @@ dependencies {
 ## Usage
 This library is used in an almost similar manner as the stock Toast widget:
 
-# Stock without any icon
+### Stock without any icon
  `Toaster.makeText(getApplicationContext(), "This is an DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();`
  
-# Info Toast
+### Info Toast
  `Toaster.makeText(getApplicationContext(), "This is an INFO toast", Toaster.LENGTH_SHORT, Toaster.INFO).show();`
  
-# Success Toast
+### Success Toast
  `Toaster.makeText(getApplicationContext(), "This is a SUCCESS toast", Toaster.LENGTH_SHORT, Toaster.SUCCESS).show();`
  
-# Warning Toast
+### Warning Toast
 `Toaster.makeText(getApplicationContext(), "This is a WARNING toast", Toaster.LENGTH_SHORT, Toaster.WARNING).show();`
 
-# Error Toast
+### Error Toast
  `Toaster.makeText(getApplicationContext(), "This is an ERROR toast", Toaster.LENGTH_SHORT, Toaster.ERROR).show();`
-# Custom Toast
+### Custom Toast
   `Toaster.makeText(getApplicationContext(), "This is a CUSTOM toast", Toaster.LENGTH_SHORT, Toaster.CUSTOM, R.drawable.ic_check_circle_white_24px, R.color.default_color).show();`
 
 
