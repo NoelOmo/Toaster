@@ -1,6 +1,8 @@
 ## Toaster
 (https://jitpack.io/v/noelomo/Toaster.svg)](https://jitpack.io/#noelomo/Toaster)
 
+[![API](https://img.shields.io/badge/API-9%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=9) [![](https://jitpack.io/v/GrenderG/Toasty.svg)](https://jitpack.io/#GrenderG/Toasty) 
+
 A lightweight library for implementing custom android Toasts. Unlike the stock toasts, these ones appear at the top of your app, overlaying your actionbar/toolbar. This library is also stocked with a couple of customization options.
 
 ## Setup
