@@ -37,7 +37,7 @@ This library is used in an almost similar manner as the stock Toast widget:
  
  ####Result:
  <div align="center">
-	<img src="https://raw.githubusercontent.com/NoelOmo/Toaster/blob/master/screenshots/default.png" width="128">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/default.png?raw=true" width="128">
 </div>
  
 ### Info Toast
