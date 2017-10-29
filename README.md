@@ -35,6 +35,11 @@ This library is used in an almost similar manner as the stock Toast widget:
 ### Stock without any icon
  `Toaster.makeText(getApplicationContext(), "This is the DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();`
  
+ ####Result:
+ <div align="center">
+	<img src="https://raw.githubusercontent.com/NoelOmo/Toaster/blob/master/screenshots/default.png" width="128">
+</div>
+ 
 ### Info Toast
  `Toaster.makeText(getApplicationContext(), "This is an INFO toast", Toaster.LENGTH_SHORT, Toaster.INFO).show();`
  
