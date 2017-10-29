@@ -1,5 +1,5 @@
 ## Toaster
-
+(https://jitpack.io/v/noelomo/Toaster.svg)](https://jitpack.io/#noelomo/Toaster)
 
 A lightweight library for implementing custom android Toasts. Unlike the stock toasts, these ones appear at the top of your app, overlaying your actionbar/toolbar. This library is also stocked with a couple of customization options.
 
@@ -31,7 +31,7 @@ dependencies {
 This library is used in an almost similar manner as the stock Toast widget:
 
 ### Stock without any icon
- `Toaster.makeText(getApplicationContext(), "This is an DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();`
+ `Toaster.makeText(getApplicationContext(), "This is the DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();`
  
 ### Info Toast
  `Toaster.makeText(getApplicationContext(), "This is an INFO toast", Toaster.LENGTH_SHORT, Toaster.INFO).show();`
