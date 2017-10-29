@@ -37,22 +37,48 @@ This library is used in an almost similar manner as the stock Toast widget:
  
  ####Result:
  <div align="center">
-	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/default.png?raw=true">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/default.png?raw=true" width="300">
 </div>
  
 ### Info Toast
  `Toaster.makeText(getApplicationContext(), "This is an INFO toast", Toaster.LENGTH_SHORT, Toaster.INFO).show();`
- 
+  
+ ####Result:
+ <div align="center">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/info.png?raw=true" width="300">
+</div>
+
 ### Success Toast
  `Toaster.makeText(getApplicationContext(), "This is a SUCCESS toast", Toaster.LENGTH_SHORT, Toaster.SUCCESS).show();`
  
+  ####Result:
+ <div align="center">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/success.png?raw=true" width="300">
+</div>
+
 ### Warning Toast
 `Toaster.makeText(getApplicationContext(), "This is a WARNING toast", Toaster.LENGTH_SHORT, Toaster.WARNING).show();`
 
+ ####Result:
+ <div align="center">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/warning.png?raw=true" width="300">
+</div>
+
 ### Error Toast
  `Toaster.makeText(getApplicationContext(), "This is an ERROR toast", Toaster.LENGTH_SHORT, Toaster.ERROR).show();`
+ 
+  ####Result:
+ <div align="center">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/error.png?raw=true" width="300">
+</div>
+
 ### Custom Toast
   `Toaster.makeText(getApplicationContext(), "This is a CUSTOM toast", Toaster.LENGTH_SHORT, Toaster.CUSTOM, R.drawable.ic_check_circle_white_24px, R.color.default_color).show();`
+  
+   ####Result:
+ <div align="center">
+	<img src="https://github.com/NoelOmo/Toaster/blob/master/screenshots/custom.png?raw=true" width="300">
+</div>
 
 
 ## Screenshots
