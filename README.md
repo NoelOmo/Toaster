@@ -3,7 +3,9 @@
 
 [![API](https://img.shields.io/badge/API-9%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=9) [![](https://jitpack.io/v/noelomo/Toaster.svg)](https://jitpack.io/#noelomo/Toaster)
 
-![demo](Screenshots/the_gif.gif)
+<div align="center">
+	<img scr="https://github.com/NoelOmo/Toaster/blob/master/screenshots/the_gif.gif?raw=true">
+</div>
 
 A lightweight library for implementing custom android Toasts. Unlike the stock toasts, these ones appear at the top of your app, overlaying your actionbar/toolbar. This library is also stocked with a couple of customization options.
 
