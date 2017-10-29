@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btnDefault.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toaster.makeText(getApplicationContext(), "This is an DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();
+                Toaster.makeText(getApplicationContext(), "This is the DEFAULT toast", Toaster.LENGTH_SHORT, Toaster.DEFAULT).show();
             }
         });
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btnCustom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toaster.makeText(getApplicationContext(), "This is a CUSTOM toast", Toaster.LENGTH_SHORT, Toaster.CUSTOM, R.drawable.ic_check_circle_white_24px, R.color.default_color).show();
+                Toaster.makeText(getApplicationContext(), "This is a CUSTOM toast", Toaster.LENGTH_SHORT, Toaster.CUSTOM, R.drawable.ic_check_circle_white_24px, R.color.colorAccent).show();
             }
         });
 
